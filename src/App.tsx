@@ -5,10 +5,10 @@ import './App.css';
 
 function App() {
 
-  const names: string[] = ['Rama', 'Krishna', 'Kamal', 'Bhaskar', 'Charan', 'Srinath', 'Surendra', 'Binnie', 'Vasu'];
+  const names: string[] = ['John', 'Alex', 'Alice', 'Eva', 'Leo', 'Cilian', 'Emily', 'Chris', 'Dan'];
 
   const [inputValue, setInputValue] = useState("");
-  const [chips, setChips] = useState(['Rama', 'Krishna', 'Bhaskar']);
+  const [chips, setChips] = useState(['Michael', 'Steven', 'Sean']);
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [isFocused, setIsFocused] = useState<boolean>(false);
   const [backSpaceCount, setBackSpaceCount] = useState(0);

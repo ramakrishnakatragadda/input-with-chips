@@ -20,13 +20,13 @@
   padding: 5px;
   margin-right: 5px; 
   border-radius: 10px;
-  background-color: gray;
+  background-color: aliceblue;
 }
 
 .chip:hover {
-  background-color: red;
+  background-color: antiquewhite;
   transition: 0.3s ease;
-};
+}
 
 .focused:last-child {
   background-color: red;
@@ -53,21 +53,55 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-.suggestion-chip-wrapper {
-  width: 150px;
-  margin-bottom: 5px; 
-}
-.suggestion-chip {
-  border: none;
-  width: 100%;
-  text-align: left;
-  padding: 10px;
-  border-radius: 25px;
+  height: 200px;
+  margin: 10px;
+  overflow-y: scroll;
 }
 
-.suggestion-chip:hover {
+.suggestion-chip-wrapper {
+  display: flex;
+  width: 150px;
+  margin: 8px; 
+  border-radius: 25px;
+  padding: 5px;
+  border: none;
+  align-items: center;
+}
+.suggestion-chip {
+  font-weight: bold;
+  text-align: left;
+  background: transparent;
+  padding: 0 3px;
+}
+
+.suggestion-chip-wrapper:hover {
   background-color: orange;
   cursor: pointer;
   transition: 0.3s ease;
+}
+
+.profile {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.chipContainer {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 2px;
+}
+
+.svg {
+  font-weight: normal;
+  margin-top: 5px;
+  padding-left: 2px;
+}
+
+.email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import KT from './images/KT.jpg';
 
 type SuggestionsProps = {
   key: string,
@@ -21,9 +22,11 @@ const Suggestions: React.FC<SuggestionsProps> = ({suggestion, chips, setChips, s
   };
 
   return (
-    <div className='suggestion-chip-wrapper'>
-      <button onClick={() => handleSuggestionClick(suggestion)} className='suggestion-chip' >{suggestion}</button>
-    </div>
+    <button className='suggestion-chip-wrapper' onClick={() => handleSuggestionClick(suggestion)}>
+      <img src={KT} alt="Profile" className='profile'/>
+      <span className='suggestion-chip'>{suggestion}</span>
+      <span className='email'>cilianmurphy@gmail.com</span>
+    </button>
   )
 }
 

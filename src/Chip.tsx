@@ -1,5 +1,7 @@
 import React from 'react'
 import './App.css';
+import SVG from './images/svg.svg';
+import KT from './images/KT.jpg';
 
 type ChipProps = {
   chip: string,
@@ -14,15 +16,16 @@ const Chip: React.FC<ChipProps> = ({chip, chips, setChips}) => {
   };
 
   return (
-    <>
+    <div className='chipContainer'>
+      <img src={KT} alt="Profile" className='profile'/>
       <span>{chip}</span>
       <button
         className='remove-chip-btn'
         onClick={() => handleRemoveChip(chip)}
       >
-        X
+      <img src={SVG} alt="remove chip" className='svg' />
       </button>
-    </>
+    </div>
   )
 }
 
